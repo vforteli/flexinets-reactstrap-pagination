@@ -1,0 +1,1 @@
+flexinets-reactstrap-pagination
