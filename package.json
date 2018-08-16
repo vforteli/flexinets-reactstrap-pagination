@@ -1,11 +1,36 @@
 {
   "name": "flexinets-reactstrap-pagination",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pagination control for reactstrap",
-  "main": "index.js",
+  "main": "./lib/PaginationControl.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vforteli/flexinets-reactstrap-pagination"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.4.2",
+    "prop-types": "^15.6.2",
+    "reactstrap": "^6.3.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "reactstrap": "^6.3.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
 }
