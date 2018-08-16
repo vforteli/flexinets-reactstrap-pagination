@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationControl renders correctly 1`] = `
+<nav
+  aria-label="pagination"
+  className=""
+>
+  <ul
+    className="pagination"
+  >
+    <li
+      className="page-item disabled"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        Previous
+      </button>
+    </li>
+    <li
+      className="page-item active"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        1
+      </button>
+    </li>
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        2
+      </button>
+    </li>
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`PaginationControl renders last page button correctly 1`] = `
+<nav
+  aria-label="pagination"
+  className=""
+>
+  <ul
+    className="pagination"
+  >
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        First
+      </button>
+    </li>
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        Previous
+      </button>
+    </li>
+    <li
+      className="page-item"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        9
+      </button>
+    </li>
+    <li
+      className="page-item active"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        10
+      </button>
+    </li>
+    <li
+      className="page-item disabled"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        Next
+      </button>
+    </li>
+    <li
+      className="page-item disabled"
+    >
+      <button
+        aria-label={undefined}
+        className="page-link"
+        href=""
+        onClick={[Function]}
+      >
+        Last
+      </button>
+    </li>
+  </ul>
+</nav>
+`;

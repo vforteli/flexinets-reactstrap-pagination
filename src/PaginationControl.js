@@ -16,7 +16,10 @@ class PaginationControl extends React.Component {
 
     getPageCount = () => Math.ceil(this.props.totalCount / this.props.pageSize);
 
-    getPagesToShow = () => {
+    getPagesToShow = () => {        
+        if (this.getPageCount() <= this.props.maxSize) {
+            return Array.from({ length: this.getPageCount() }, (v, k) => k + 1);
+        }
         const foo = this.props.maxSize / 2;
         const offset = Math.max(0, 1 - Math.ceil(this.props.currentPage - foo)) + Math.min(0, Math.ceil(this.getPageCount() - (this.props.currentPage + foo)));
         const start = Math.ceil(this.props.currentPage - foo);
