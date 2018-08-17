@@ -16,7 +16,7 @@ class PaginationControl extends React.Component {
 
     getPageCount = () => Math.ceil(this.props.totalCount / this.props.pageSize);
 
-    getPagesToShow = () => {        
+    getPagesToShow = () => {
         if (this.getPageCount() <= this.props.maxSize) {
             return Array.from({ length: this.getPageCount() }, (v, k) => k + 1);
         }
@@ -50,7 +50,7 @@ class PaginationControl extends React.Component {
                 </PaginationItem>
                 {this.props.maxSize < this.getPageCount() &&
                     <PaginationItem disabled={this.props.currentPage === this.getPageCount()}>
-                        <PaginationLink href="" onClick={(e) => { e.preventDefault(); this.pageChanged(this.getPageCount()); }}>Last</PaginationLink>
+                        <PaginationLink href="" onClick={() => this.pageChanged(this.getPageCount())}>Last</PaginationLink>
                     </PaginationItem>
                 }
             </Pagination>
