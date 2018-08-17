@@ -28,8 +28,8 @@ class PaginationControl extends React.Component {
             foo--;
             derp = 1;
         }
-        const offset = Math.max(0, 1 - (this.props.currentPage - foo)) + Math.min(0, Math.ceil(this.getPageCount() - (this.props.currentPage + foo + derp)));
-        const start = Math.ceil(this.props.currentPage - foo);
+        const offset = Math.max(0, 1 - (this.props.currentPage - foo)) + Math.min(0, this.getPageCount() - (this.props.currentPage + foo + derp));
+        const start = this.props.currentPage - foo;
 
         return Array.from({ length: this.props.maxSize }, (v, k) => k + start + offset);
     }
