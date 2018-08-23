@@ -61,7 +61,7 @@ class PaginationControl extends React.Component {
 }
 
 PaginationControl.defaultProps = {
-    maxSize: 9
+    maxSize: 10
 };
 
 PaginationControl.propTypes = {

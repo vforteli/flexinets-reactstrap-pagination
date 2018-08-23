@@ -1,6 +1,6 @@
 {
   "name": "flexinets-reactstrap-pagination",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pagination control for reactstrap",
   "main": "./lib/PaginationControl.js",
   "repository": {
